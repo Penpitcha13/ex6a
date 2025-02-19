@@ -67,8 +67,8 @@
 			   var u = $('#unit').val();
 			  
 			   if(validate(t)==0) return;
-			 
-			   alert("Temperature is "+t1+" in "+u1);
+			   var result = calculate(t,u)
+			   alert("Temperature is "+result.temp+" in "+result.unit);
 			});
 		});
 	</script>
